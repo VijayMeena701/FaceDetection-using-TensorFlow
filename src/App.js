@@ -20,7 +20,7 @@ function App() {
     });
     setInterval(() => {
       detect(net);
-    }, 1000)
+    }, 50)
   }
 
   // Function to detect face
@@ -118,6 +118,7 @@ function App() {
           zIndex: 9,
           textAlign: 'center'
         }}
+          audio={false}
           videoConstraints={videoConstraints}
         />
         <canvas ref={canvasRef} style={{
